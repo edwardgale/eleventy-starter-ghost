@@ -48,7 +48,7 @@ module.exports = function(config) {
   });
 
   config.addFilter("getReadingTime", text => {
-    const wordsPerMinute = 200;
+    const wordsPerMinute = 250;
     const numberOfWords = text.split(/\s/g).length;
     return Math.ceil(numberOfWords / wordsPerMinute);
   });
